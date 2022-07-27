@@ -1,0 +1,12 @@
+Category,Additional Query,column,backgroundColor,color,textDecoration,border,fontStyle,DisplayAs
+Equity pointed to backfillable sales,,,"rgb(255, 204, 0)",,,,,
+Longs against IoG,,,"rgb(255, 204, 0)",,,,,
+Longs against TAC,,,"rgb(0, 204, 255)",,,,,Long Cargo
+Shorts against TAC,{Buy Price} > {Sell Price},,"rgb(255, 0, 0)",white,,,,Short Cargo
+Shorts against TAC,{Buy Price} <= {Sell Price},,"rgb(255, 128, 128)",,,,,Out of the money short cargo
+Terminated,,,,"rgb(150, 150, 150)",line-through,,,
+Unconfirmed,,,,"rgb(150, 150, 150)",,,,
+"Warning: Spanish Cargoes pointed to Argentina, etc",,,"rgb(216, 228, 188)",,,,,
+,{Discharge Date} < today,,"rgb(192, 192, 192)",,,,,Discharged Cargo
+,({Buy Index} is blank && {Discharge Date} >= today),Cargo ID,,,,1px solid black,italic,Liquid Window
+,({Sell Index} is blank && {Discharge Date} >= today),Discharge Name,,,,1px solid black,italic,Liquid Window
